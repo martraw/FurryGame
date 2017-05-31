@@ -59,6 +59,7 @@ section#over {
   top: 0;
   z-index: 1;
   padding: 10px;
+  text-align: center;
   background-color: rgba(255, 255, 0, 0.75);
 }
 
