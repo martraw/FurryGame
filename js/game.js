@@ -1,11 +1,9 @@
 var Furry = require("./furry.js");
 var Coin = require("./coin.js");
 
-// var Game = function(){
 function game() {
   var self = this;
   this.board = document.querySelectorAll("#board div");
-  // console.log(this.board);
   this.furry = new Furry();
   this.coin = new Coin();
   this.score = 0;
@@ -23,9 +21,6 @@ function game() {
     for (var i = 0; i < this.board.length; i++) {
       this.board[i].classList.remove("furry");
     }
-    // var visibleFurry = document.querySelector(".furry");
-    // visibleFurry.classList.remove("furry");
-    // console.log(visibleFurry);
   };
 
   this.showCoin = function() {
@@ -74,7 +69,6 @@ function game() {
       this.coin = new Coin();
       this.showCoin();
     }
-    // this.showCoin();
   };
 
   this.gameOver = function() {
@@ -97,9 +91,7 @@ function game() {
       self.moveFurry();
       // console.log(this);
     }, 200);
-
   };
-
 }
 
 module.exports = game;
